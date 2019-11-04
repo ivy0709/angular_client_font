@@ -17,6 +17,8 @@ export class BlogService extends BaseService {
   initBlog(next?: (value: any) => void, error?: (error: any) => void) {
     const signValue: string = Md5.hashStr(userUrl + secertKey).toString();
     this.get(baseUrl + userUrl, signValue, {}, next, error);
+
+    // this.ms.error('initBlog!');
   }
 
   isInit(): Boolean {

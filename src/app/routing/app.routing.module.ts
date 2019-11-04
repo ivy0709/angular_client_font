@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: 'app/aboutus/aboutus.module#AboutusModule'
+  }, 
+  {
+    path: 'login',
+    loadChildren: 'app/login/login.module#LoginModule'
   }, {
     path: '**',
     redirectTo: '/article'

@@ -40,9 +40,9 @@ export class ArtlistComponent implements OnInit {
       this.bs.getAllArticles(this.pageIndex + '', this.defaultS, value => {
         this.userArticles = value['data']['articles'];
         this.totalCount = value['data']['count'];
-        this.ds = true;
-        this.cs = false;
-        this.vs = false;
+        this.ds = true;  //defaultSort
+        this.cs = false;  //sortByCreate_time
+        this.vs = false;  //sortByViews
       });
     } else {
       this.bs.getAllArticlesByCid(this.cid + '', this.pageIndex + '', this.defaultS, value => {
@@ -122,6 +122,7 @@ export class ArtlistComponent implements OnInit {
     }
   }
 
+  // Change event object that is emitted when the user selects a different page size or navigates to another page.
   change(e: any) {
     this.pageIndex = e['pageIndex'];
     if (this.ds) {

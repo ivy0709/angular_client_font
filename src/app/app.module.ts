@@ -5,10 +5,12 @@ import {AppRoutingModule} from './routing/app.routing.module';
 import {NavBarModule} from './nav-bar/nav-bar.module';
 import {BlogService} from './service/blog.service';
 import {HttpClientModule} from '@angular/common/http';
+// import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // LoginComponent,
   ],
   imports: [
     BrowserAnimationsModule,
