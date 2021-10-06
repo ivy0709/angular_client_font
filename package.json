@@ -40,7 +40,7 @@
     "tar": "^2.2.2",
     "ts-md5": "^1.2.4",
     "union-value": "^1.0.1",
-    "url-parse": "^1.4.4",
+    "url-parse": "^1.5.2",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
